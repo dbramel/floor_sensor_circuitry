@@ -1,0 +1,1 @@
+(sym_lib_table (lib (name "Local") (type "KiCad") (uri "${KIPRJMOD}/FSR_Floor_Sensor_POC.kicad_sym") (options "") (descr "Project-local custom device symbols")))
