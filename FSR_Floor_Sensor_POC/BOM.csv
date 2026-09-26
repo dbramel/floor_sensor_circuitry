@@ -1,21 +1,24 @@
-Reference,Quantity,Value / Description,Notes
-U1,1,ADS1256,28-pin SSOP DB package
-U2-U3,2,ADG708,16-lead TSSOP; common 3-bit address and enable
-U4,1,REF5025,2.5 V precision reference; select SOIC-8 or VSSOP-8 variant
-J1,1,2x10 host interface,Order: four mux controls; SPI; ADC control/clock/GPIO; +5VA; +3V3; two AGND returns
-J2,1,2x8 IDC ribbon socket,Odd pins 1–15 carry VEXC_2V5; even pins 2–16 carry FSR0_NODE through FSR7_NODE
-R1,1,1 kΩ,Load resistor
-R2,1,3.3 kΩ,Load resistor
-R3,1,10 kΩ,Load resistor
-R4,1,33 kΩ,Load resistor
-R5,1,100 kΩ,Load resistor
-R6,1,330 kΩ,Load resistor
-R7,1,1 MΩ,Load resistor
-C1,1,100 nF,AVDD local bypass
-C2,1,10 µF,AVDD bulk bypass
-C3,1,100 nF,DVDD local bypass
-C4,1,10 µF,DVDD bulk bypass
-C5,1,1 µF,REF5025 VIN bypass
-C6,1,1 µF,REF5025 output bypass
-C7,1,1 µF C0G or film,REF5025 TRIM/NR noise filtering
-C8,1,1 µF,ADS1256 reference input bypass
+"Reference","Value","Datasheet","Footprint","Qty","DNP","Description"
+"C1,C3,C17,C18","100n","","Capacitor_SMD:C_0805_2012Metric","4","","X7R or X5R ceramic"
+"C2,C4","10u","","Capacitor_SMD:C_0805_2012Metric","2","","X7R"
+"C9,C10,C11,C12,C13,C14,C15,C16","100pF","","Capacitor_SMD:C_0805_2012Metric","8","","Unpolarized capacitor COG/NPO Ceramic"
+"C19","1u","","Capacitor_SMD:C_0805_2012Metric","1","","X7R or X5R ceramic"
+"C20","0.1u","","Capacitor_SMD:C_0805_2012Metric","1","","X7R or X5R ceramic"
+"CL1","47u","","Capacitor_SMD:C_0805_2012Metric","1","","X7R deramic"
+"J1","DRDY Jumpers","","Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical","1","","Generic connector, double row, 02x08, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+"J2","FSR Ribbon Connector","","Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical","1","",""
+"J3","CS Jumpers","","Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical","1","","Generic connector, double row, 02x08, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+"J4","Stackable Header","https://cdn-shop.adafruit.com/product-files/2223/P2223+F201-SGP-D110-XX__1_old+flat.pdf","Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Vertical","1","","2×16, 2.54 mm pitch, through-hole stacking header; female sockets on top, extra-long square male tails through the PCB on the bottom; straight/vertical; board-to-board stackable. Specify pin length and stack height to match the mating boards."
+"R1","1k","","Resistor_SMD:R_0805_2012Metric","1","",""
+"R2","3.3k","","Resistor_SMD:R_0805_2012Metric","1","",""
+"R3","10k","","Resistor_SMD:R_0805_2012Metric","1","",""
+"R4","33k","","Resistor_SMD:R_0805_2012Metric","1","",""
+"R5","100k","","Resistor_SMD:R_0805_2012Metric","1","",""
+"R6","330k","","Resistor_SMD:R_0805_2012Metric","1","",""
+"R7","1M","","Resistor_SMD:R_0805_2012Metric","1","",""
+"R8","3.3M","","Resistor_SMD:R_0805_2012Metric","1","",""
+"R9,R10,R11,R12,R13,R14,R15,R16,R21,R22,R23","100","","Resistor_SMD:R_0805_2012Metric","11","","Resistor"
+"RESR1","22m","","Resistor_SMD:R_0805_2012Metric","1","","Resistor"
+"U1","ADS1256","https://www.ti.com/lit/ds/symlink/ads1255.pdf?ts=1790116895214","Package_SO:SSOP-28_5.3x10.2mm_P0.65mm","1","",""
+"U2,U3","ADG708","https://www.analog.com/media/en/technical-documentation/data-sheets/ADG708_709.pdf","Package_SO:TSSOP-16_4.4x5mm_P0.65mm","2","",""
+"U4","REF6025xDGK","https://www.ti.com/lit/ds/symlink/ref6025.pdf","Package_SO:VSSOP-8_3x3mm_P0.65mm","1","","2.5V 0.05% 4mA Extremely Low Noise High Precision Voltage Reference, VSSOP-8"
