@@ -1309,6 +1309,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 27.94) (xy 87.63 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "535a8371-c945-4843-a6bb-8d02475d1c4b")
+	)
+	(wire
+		(pts
 			(xy 87.63 74.93) (xy 85.09 74.93)
 		)
 		(stroke
@@ -1326,16 +1336,6 @@
 			(type default)
 		)
 		(uuid "5d528d87-d0e6-41a6-a62f-bae511adc80e")
-	)
-	(wire
-		(pts
-			(xy 87.63 27.94) (xy 83.82 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e52ec3b-c270-4df4-9fda-6817cc704542")
 	)
 	(wire
 		(pts
@@ -1857,7 +1857,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical"
 			(at 76.2 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -1979,7 +1979,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical"
 			(at 77.47 72.39 0)
 			(hide yes)
 			(show_name no)

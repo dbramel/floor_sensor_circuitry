@@ -69,7 +69,13 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -203,7 +209,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +238,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -516,7 +529,7 @@
         "bus_width": 39,
         "line_style": 0,
         "name": "2V5 Ref",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 194, 194)",
         "priority": 2,
         "schematic_color": "rgb(0, 194, 194)",
         "tuning_profile": "",
@@ -526,9 +539,10 @@
         "bus_width": 39,
         "line_style": 0,
         "name": "3V3 Power",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 162, 4)",
         "priority": 3,
         "schematic_color": "rgb(255, 162, 4)",
+        "track_width": 0.5,
         "tuning_profile": "",
         "wire_width": 20
       },
@@ -536,9 +550,10 @@
         "bus_width": 39,
         "line_style": 0,
         "name": "5V Power",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 0, 39)",
         "priority": 4,
         "schematic_color": "rgb(255, 0, 39)",
+        "track_width": 0.5,
         "tuning_profile": "",
         "wire_width": 20
       },
@@ -546,7 +561,7 @@
         "bus_width": 16,
         "line_style": 1,
         "name": "Digital",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(194, 194, 0)",
         "priority": 0,
         "schematic_color": "rgb(194, 194, 0)",
         "tuning_profile": "",
@@ -556,7 +571,7 @@
         "bus_width": 16,
         "line_style": 0,
         "name": "FSR Analog",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(93, 188, 255)",
         "priority": 5,
         "schematic_color": "rgb(93, 188, 255)",
         "tuning_profile": "",
@@ -566,7 +581,7 @@
         "bus_width": 39,
         "line_style": 0,
         "name": "Ground",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 0, 255)",
         "priority": 1,
         "schematic_color": "rgb(0, 0, 255)",
         "tuning_profile": "",
