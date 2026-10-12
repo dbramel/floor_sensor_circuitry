@@ -904,6 +904,129 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power global)
 			(pin_numbers
@@ -1159,6 +1282,34 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Components are common to both the MCU and FSR boards"
+		(exclude_from_sim no)
+		(at 104.14 20.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "213fdcae-5e09-45e4-a58e-cc676f46c6bb")
+	)
+	(junction
+		(at 73.66 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "470ecbf1-b443-4de2-946b-1a793075e98c")
+	)
+	(junction
+		(at 73.66 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "697315eb-1eeb-45d7-bd78-c92b0999cac7")
+	)
+	(junction
+		(at 73.66 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7fd36eda-26da-410a-a20f-0bb2d069547c")
+	)
 	(no_connect
 		(at 72.39 77.47)
 		(uuid "2790bd0b-05ad-4a20-9ef3-7dbd033c526a")
@@ -1179,7 +1330,7 @@
 	)
 	(bus
 		(pts
-			(xy 105.41 41.91) (xy 105.41 54.61)
+			(xy 105.41 41.91) (xy 105.41 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1189,13 +1340,23 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 43.18) (xy 71.12 43.18)
+			(xy 67.31 48.26) (xy 71.12 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1826bb61-54ed-4d03-9b90-a394ebcab27d")
+	)
+	(wire
+		(pts
+			(xy 73.66 99.06) (xy 73.66 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fb29b4f-c9fa-421e-b890-0e93f80837d3")
 	)
 	(bus
 		(pts
@@ -1209,7 +1370,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 38.1) (xy 71.12 38.1)
+			(xy 67.31 43.18) (xy 71.12 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1239,7 +1400,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 27.94) (xy 71.12 27.94)
+			(xy 67.31 33.02) (xy 71.12 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1249,7 +1410,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 43.18) (xy 83.82 43.18)
+			(xy 87.63 48.26) (xy 83.82 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1259,7 +1420,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 40.64) (xy 71.12 40.64)
+			(xy 67.31 45.72) (xy 71.12 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1269,7 +1430,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 35.56) (xy 83.82 35.56)
+			(xy 87.63 40.64) (xy 83.82 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1279,7 +1440,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 33.02) (xy 83.82 33.02)
+			(xy 87.63 38.1) (xy 83.82 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1309,7 +1470,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 27.94) (xy 87.63 27.94)
+			(xy 83.82 33.02) (xy 87.63 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1329,7 +1490,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 45.72) (xy 71.12 45.72)
+			(xy 67.31 50.8) (xy 71.12 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1359,7 +1520,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 30.48) (xy 71.12 30.48)
+			(xy 67.31 35.56) (xy 71.12 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1379,7 +1540,7 @@
 	)
 	(bus
 		(pts
-			(xy 105.41 54.61) (xy 83.82 54.61)
+			(xy 105.41 57.15) (xy 83.82 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1389,7 +1550,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 33.02) (xy 71.12 33.02)
+			(xy 67.31 38.1) (xy 71.12 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1399,7 +1560,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 35.56) (xy 71.12 35.56)
+			(xy 67.31 40.64) (xy 71.12 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1409,7 +1570,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 38.1) (xy 83.82 38.1)
+			(xy 87.63 43.18) (xy 83.82 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1419,7 +1580,17 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 45.72) (xy 83.82 45.72)
+			(xy 73.66 92.71) (xy 73.66 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1496922-7d9c-4d75-8e10-c6a9060a5af4")
+	)
+	(wire
+		(pts
+			(xy 87.63 50.8) (xy 83.82 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1459,6 +1630,26 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 105.41) (xy 73.66 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c210ef20-5ce7-4270-a20b-a7d37cfddc54")
+	)
+	(wire
+		(pts
+			(xy 73.66 111.76) (xy 73.66 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2f6ff88-c5e4-4e3f-a1e3-e074c6a42bdc")
+	)
+	(wire
+		(pts
 			(xy 132.08 60.96) (xy 124.46 60.96)
 		)
 		(stroke
@@ -1469,7 +1660,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 30.48) (xy 83.82 30.48)
+			(xy 87.63 35.56) (xy 83.82 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1489,7 +1680,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 40.64) (xy 83.82 40.64)
+			(xy 87.63 45.72) (xy 83.82 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1508,7 +1699,7 @@
 		(uuid "f7390055-4c4b-4105-a09e-25db125b4e78")
 	)
 	(label "Daughter_7"
-		(at 67.31 43.18 180)
+		(at 67.31 48.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1518,7 +1709,7 @@
 		(uuid "0c1def0c-1a1b-4405-866b-6fc44ae98371")
 	)
 	(label "Daughter_[1..16]"
-		(at 83.82 54.61 180)
+		(at 83.82 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1548,7 +1739,7 @@
 		(uuid "176a43b7-1df6-41a9-b957-e7e907335da6")
 	)
 	(label "Daughter_10"
-		(at 87.63 30.48 0)
+		(at 87.63 35.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1558,7 +1749,7 @@
 		(uuid "1b6dea39-564d-4824-8973-82daa8aa2b16")
 	)
 	(label "Daughter_6"
-		(at 67.31 40.64 180)
+		(at 67.31 45.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1568,7 +1759,7 @@
 		(uuid "21d39eec-2a5d-47a1-a2bf-86b94f44c341")
 	)
 	(label "Daughter_15"
-		(at 87.63 43.18 0)
+		(at 87.63 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1578,7 +1769,7 @@
 		(uuid "2a53d771-2b4d-476d-a0a4-2340a5c2379f")
 	)
 	(label "Daughter_13"
-		(at 87.63 38.1 0)
+		(at 87.63 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1587,7 +1778,7 @@
 		)
 		(uuid "39040f83-20bd-45b2-b5be-cd0b8c77be86")
 	)
-	(label "FSR_Mux_0"
+	(label "FSR_Mux_2"
 		(at 87.63 69.85 0)
 		(effects
 			(font
@@ -1598,7 +1789,7 @@
 		(uuid "398f9452-b62b-4af0-96e4-b4240e4da1f4")
 	)
 	(label "Daughter_11"
-		(at 87.63 33.02 0)
+		(at 87.63 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1607,7 +1798,7 @@
 		)
 		(uuid "3bb146fb-7d88-432f-9257-fc6b54c290ef")
 	)
-	(label "FSR_Mux_2"
+	(label "FSR_Mux_0"
 		(at 87.63 74.93 0)
 		(effects
 			(font
@@ -1618,7 +1809,7 @@
 		(uuid "3d8117ca-7e1e-4db6-9280-6f104672a1ca")
 	)
 	(label "Daughter_8"
-		(at 67.31 45.72 180)
+		(at 67.31 50.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1638,7 +1829,7 @@
 		(uuid "5876ef33-6eb7-407a-9886-6bc683947e77")
 	)
 	(label "Daughter_3"
-		(at 67.31 33.02 180)
+		(at 67.31 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1648,7 +1839,7 @@
 		(uuid "731ccbe6-b0f7-4053-b5ba-5a632d03c8ba")
 	)
 	(label "Daughter_14"
-		(at 87.63 40.64 0)
+		(at 87.63 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1658,7 +1849,7 @@
 		(uuid "7a032e13-6a56-444d-8bf1-109f8edafd09")
 	)
 	(label "Daughter_9"
-		(at 87.63 27.94 0)
+		(at 87.63 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1668,7 +1859,7 @@
 		(uuid "7ced1f9e-11b0-4ac7-8435-351de8f45461")
 	)
 	(label "Daughter_5"
-		(at 67.31 38.1 180)
+		(at 67.31 43.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1678,7 +1869,7 @@
 		(uuid "948c0ea4-5bd6-4f86-8ac0-acb35e20f900")
 	)
 	(label "Daughter_12"
-		(at 87.63 35.56 0)
+		(at 87.63 40.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1688,7 +1879,7 @@
 		(uuid "a8fab8fe-be96-4405-bf68-22360cc3e197")
 	)
 	(label "Daughter_1"
-		(at 67.31 27.94 180)
+		(at 67.31 33.02 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1698,7 +1889,7 @@
 		(uuid "c60fb3c9-1268-48a6-8b52-1cdd74c45840")
 	)
 	(label "Daughter_16"
-		(at 87.63 45.72 0)
+		(at 87.63 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1708,7 +1899,7 @@
 		(uuid "d12f2d74-1462-4f78-af3f-704f5d5b9760")
 	)
 	(label "Daughter_4"
-		(at 67.31 35.56 180)
+		(at 67.31 40.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1728,7 +1919,7 @@
 		(uuid "ea742bb6-2cc3-4293-a06d-8a359357e308")
 	)
 	(label "Daughter_2"
-		(at 67.31 30.48 180)
+		(at 67.31 35.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1826,39 +2017,41 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_02x08_Top_Bottom")
-		(at 76.2 35.56 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 76.2 99.06 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2fab445c-3774-41d3-8ff9-ae6049c59772")
-		(property "Reference" "J1"
-			(at 77.47 21.59 0)
+		(uuid "2602397a-977f-4c86-a560-48a3ae708567")
+		(property "Reference" "H2"
+			(at 80.01 97.7899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Daughterboard Connector"
-			(at 77.47 24.13 0)
+		(property "Value" "MountingHole_Pad"
+			(at 80.01 100.3299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical"
-			(at 76.2 35.56 0)
+		(property "Footprint" "MountingHole:MountingHole_3mm_Pad_TopBottom"
+			(at 76.2 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1869,7 +2062,84 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 35.56 0)
+			(at 76.2 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 76.2 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "396e6bd7-e3e9-4e6c-a6fe-1f19921b5ad2")
+		)
+		(instances
+			(project "FSR Floor Sensor Circuit V2"
+				(path "/f755b232-d3a3-432e-82d0-c24f93d5f8c8"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x08_Top_Bottom")
+		(at 76.2 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2fab445c-3774-41d3-8ff9-ae6049c59772")
+		(property "Reference" "J1"
+			(at 77.47 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Daughterboard Connector"
+			(at 77.47 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical"
+			(at 76.2 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1880,7 +2150,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x08, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 76.2 35.56 0)
+			(at 76.2 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2046,6 +2316,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 76.2 105.41 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d60d048-d48f-426d-8e6a-d697cd5de964")
+		(property "Reference" "H3"
+			(at 80.01 104.1399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 80.01 106.6799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3mm_Pad_TopBottom"
+			(at 76.2 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 76.2 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "17191fab-7885-4863-890f-0e58edc245c8")
+		)
+		(instances
+			(project "FSR Floor Sensor Circuit V2"
+				(path "/f755b232-d3a3-432e-82d0-c24f93d5f8c8"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 69.85 74.93 270)
 		(unit 1)
@@ -2198,6 +2547,85 @@
 			(project "FSR Floor Sensor Circuit V2"
 				(path "/f755b232-d3a3-432e-82d0-c24f93d5f8c8"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 76.2 111.76 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9426c80-f819-466a-90d1-39e8bc036572")
+		(property "Reference" "H4"
+			(at 80.01 110.4899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 80.01 113.0299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3mm_Pad"
+			(at 76.2 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 76.2 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9fd3c9fb-a7cd-4fae-8d3c-a09710093976")
+		)
+		(instances
+			(project "FSR Floor Sensor Circuit V2"
+				(path "/f755b232-d3a3-432e-82d0-c24f93d5f8c8"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -2360,6 +2788,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 76.2 92.71 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3943cbd-9a7a-4793-b545-2813bd5c2458")
+		(property "Reference" "H1"
+			(at 80.01 91.4399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 80.01 93.9799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3mm_Pad_TopBottom"
+			(at 76.2 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 76.2 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1b00dec7-4058-4954-a3b7-d8d902df4d05")
+		)
+		(instances
+			(project "FSR Floor Sensor Circuit V2"
+				(path "/f755b232-d3a3-432e-82d0-c24f93d5f8c8"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 124.46 60.96 270)
 		(unit 1)
@@ -2433,6 +2940,84 @@
 			(project "FSR Floor Sensor Circuit V2"
 				(path "/f755b232-d3a3-432e-82d0-c24f93d5f8c8"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 73.66 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef35f100-a343-4359-be90-8384dd49a980")
+		(property "Reference" "#PWR07"
+			(at 73.66 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 73.66 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 73.66 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "df706a59-7547-4b8a-94c3-ff323a344d16")
+		)
+		(instances
+			(project "FSR Floor Sensor Circuit V2"
+				(path "/f755b232-d3a3-432e-82d0-c24f93d5f8c8"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
