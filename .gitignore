@@ -11,4 +11,7 @@
 *.gts
 *.gbs
 *.gm1
-
+*.gbr
+# OS stuff
+*.DS_Store
+*.zip
