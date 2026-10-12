@@ -124,7 +124,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "outputs/")
 		)
 	)
 	(footprint "Fiducial:Fiducial_1mm_Mask2mm"
