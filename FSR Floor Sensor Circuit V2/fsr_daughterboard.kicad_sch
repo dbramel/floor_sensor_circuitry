@@ -2397,6 +2397,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "board-detection resistor"
+		(exclude_from_sim no)
+		(at 121.92 58.42 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "94db09a8-91b6-4376-856e-9bb221a40804")
+	)
 	(junction
 		(at 97.79 60.96)
 		(diameter 0)
@@ -2498,6 +2508,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8a2a5729-175b-4e62-b8b8-24635c97f5d7")
+	)
+	(junction
+		(at 125.73 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e4fa407-9f7e-4323-96b2-becf747eda0b")
 	)
 	(junction
 		(at 110.49 90.17)
@@ -2944,6 +2960,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 45.72) (xy 125.73 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3206180d-a4a6-458f-8d30-8e2fb963bed3")
+	)
+	(wire
+		(pts
 			(xy 97.79 60.96) (xy 95.25 60.96)
 		)
 		(stroke
@@ -3234,6 +3260,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 55.88) (xy 125.73 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b50a498-36a2-49af-9ead-e5f9dc28230f")
+	)
+	(wire
+		(pts
 			(xy 81.28 97.79) (xy 95.25 97.79)
 		)
 		(stroke
@@ -3331,6 +3367,16 @@
 			(type default)
 		)
 		(uuid "7850c6e6-75e6-4d2f-b87c-159d4bfd08c9")
+	)
+	(wire
+		(pts
+			(xy 125.73 43.18) (xy 147.32 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78c51820-d66e-420e-91d3-b967e35d07eb")
 	)
 	(wire
 		(pts
@@ -3514,7 +3560,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 43.18) (xy 147.32 43.18)
+			(xy 97.79 43.18) (xy 125.73 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4423,6 +4469,17 @@
 		)
 		(uuid "42f9b9f0-6e43-4b9a-852f-1911674b3d5f")
 	)
+	(hierarchical_label "2V5_REF"
+		(shape input)
+		(at 125.73 55.88 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "99a45021-5825-495b-9470-13294bb63a6d")
+	)
 	(hierarchical_label "+5V"
 		(shape input)
 		(at 142.24 45.72 180)
@@ -4780,7 +4837,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 119.38 63.5 0)
+		(at 137.16 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4791,7 +4848,7 @@
 		(fields_autoplaced yes)
 		(uuid "712002d4-2c42-4d1f-9f79-1b678f44a422")
 		(property "Reference" "FID2"
-			(at 121.92 62.2299 0)
+			(at 139.7 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4802,7 +4859,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 121.92 64.7699 0)
+			(at 139.7 95.2499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4813,7 +4870,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 119.38 63.5 0)
+			(at 137.16 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4824,7 +4881,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 63.5 0)
+			(at 137.16 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4835,7 +4892,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 119.38 63.5 0)
+			(at 137.16 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5262,19 +5319,19 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:Fiducial")
-		(at 109.22 53.34 0)
+		(lib_id "Device:R")
+		(at 125.73 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ecc29a75-d16f-4b21-9a7f-f6ac7524b6da")
-		(property "Reference" "FID1"
-			(at 111.76 52.0699 0)
+		(uuid "d3dbd63d-416c-4094-9438-407bcc39b125")
+		(property "Reference" "R3"
+			(at 128.27 48.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5284,8 +5341,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Fiducial"
-			(at 111.76 54.6099 0)
+		(property "Value" "10M"
+			(at 128.27 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5295,8 +5352,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 109.22 53.34 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 123.952 49.53 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5307,7 +5364,89 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 53.34 0)
+			(at 125.73 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 125.73 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "29eb01da-b3b2-4c83-a622-4de853c00506")
+		)
+		(pin "1"
+			(uuid "fecd1290-5702-4e66-9c56-0b34a533fc3b")
+		)
+		(instances
+			(project "FSR Floor Sensor Circuit V2"
+				(path "/f755b232-d3a3-432e-82d0-c24f93d5f8c8/4081d15f-10c6-4ec3-98a3-c3d13b71b01e"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 127 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ecc29a75-d16f-4b21-9a7f-f6ac7524b6da")
+		(property "Reference" "FID1"
+			(at 129.54 82.5499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 129.54 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 127 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5318,7 +5457,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 109.22 53.34 0)
+			(at 127 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

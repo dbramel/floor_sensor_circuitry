@@ -15,3 +15,5 @@
 # OS stuff
 *.DS_Store
 *.zip
+# KiCad autosaves
+_autosave*
